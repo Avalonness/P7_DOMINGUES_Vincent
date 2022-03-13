@@ -1,7 +1,7 @@
 # Projet 7 - BACKEND
 
-## Qu'esy-ce que c'est ? ?
-Voici la partie backend de l'application qui utilise MySQL et Sequelize-CLI.
+## Qu'esy-ce que c'est ?
+Voici la partie backend de l'application GROUPOMANIA qui utilise MySQL et Sequelize-CLI.
 
 ## Installation du back-end
 Après avoir cloné le repository, installer les packages avec `npm install`.
