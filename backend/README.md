@@ -7,7 +7,7 @@ Voici la partie backend de l'application GROUPOMANIA qui utilise MySQL et Sequel
 Après avoir cloné le repository, installer les packages avec `npm install` puis taper `npm i express sequelize-cli mysql2`.
 
 ## Vous avez déjà configuré votre ROOT SQL
-Vous devedez modifier les fichier `connexions` et `config` dans le dossier `config` avec les identifiants de votre root, notamment changer le mot de passe. Veuillez aussi créer une database nommé `cli-groupomania` dans votre local pour que le back puisse fonctionner.
+Vous devedez modifier les fichier `connexions` et `config` dans le dossier `config` avec les identifiants de votre root, notamment changer le mot de passe. Veuillez aussi créer une database nommé `groupomania` dans votre local pour que le back puisse fonctionner.
 
 ## Lancer le back-end
 Une fois terminé, vous pourrez lancer l'API en tapant `npm start` dans la console dans le dossier backend.
