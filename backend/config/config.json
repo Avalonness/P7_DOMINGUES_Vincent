@@ -2,21 +2,21 @@
   "development": {
     "username": "root",
     "password": "@Tfcvbgt123",
-    "database": "cli-groupomania",
+    "database": "groupomania",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "@Tfcvbgt123",
-    "database": "cli-groupomania",
+    "database": "groupomania",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": "@Tfcvbgt123",
-    "database": "cli-groupomania",
+    "database": "groupomania",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
