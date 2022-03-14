@@ -4,7 +4,7 @@
 Voici la partie backend de l'application GROUPOMANIA qui utilise MySQL et Sequelize-CLI.
 
 ## Installation du back-end
-Après avoir cloné le repository, installer les packages avec `npm install` puis taper `npm install express --save`.
+Après avoir cloné le repository, installer les packages avec `npm install` puis taper `npm install express`.
 
 ## Lancer le back-end
 Une fois terminé, vous pourrez lancer l'API en tapant `npm start` dans la console dans le dossier backend.
