@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import colors from '../../../../../utils/styles/colors'
-import { useState } from 'react'
 
 const Container = styled.div`
   padding: 25px;
@@ -79,32 +78,34 @@ const AuthContent = styled.div`
 function Login() {
   const token = localStorage.getItem('Token_Groupo')
 
-  function logUser() {
-    fetch('http://localhost:8080/login', {
+  async function logUser() {
+    const data = {
       method: 'POST',
       headers: {
-        Accept: 'application/json, text/plain, */*',
+        Accept: 'application/json, text/plain, /',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         email: document.querySelector('#logemail').value,
         password: document.querySelector('#logpassword').value,
       }),
-    })
-      .then((response) => response.json())
-      .then((data) =>
-        localStorage.setItem('Token_Groupo', `Bearer ${data.accessToken}`)
-      )
-      .catch((err) => {
-        console.log(err)
-      })
-    setTimeout(function () {
-      window.location.href = 'http://localhost:3000/home'
-    }, 2500)
+    }
+    const response = await fetch('http://localhost:8080/login', data);
+    if(response.status === 200)
+    {
+      const datas = await response.json();
+      console.log(datas)
+      localStorage.setItem('Token_Groupo', "Bearer " + datas.accessToken)
+      redirect()
+
+    }
+
   }
 
   function redirect() {
-    document.location.href = 'http://localhost:3000/home'
+    setTimeout(function () {
+      window.location.href = 'http://localhost:3000/home'
+    }, 2500)
   }
 
   return (
