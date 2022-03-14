@@ -4,7 +4,7 @@ const {
 } = require('sequelize');
 
 
-const database = new Sequelize('cli-groupomania', 'root', '@Tfcvbgt123', {dialect: "mysql", host: "localhost"})
+const database = new Sequelize('groupomania', 'root', '@Tfcvbgt123', {dialect: "mysql", host: "localhost"})
 
 database.authenticate()
     .then(() => console.log("Vous êtes maintenant connecté à la base de donnée !"))
